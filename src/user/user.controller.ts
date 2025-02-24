@@ -22,6 +22,7 @@ export class UserController {
         return this.userService.login(loginUserDto)
     }
 
+
     // 上传接口
     @Post('upload')
     @UseInterceptors(FilesInterceptor('files', 20, {
